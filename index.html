@@ -6,11 +6,67 @@
   <title>Svět patří těm, co se neposerou</title>
   <meta name="description" content="Cesta kolem světa">
   <meta name="author" content="Jakub Mrozek">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
   <style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 110%;
+  }
+  strong {
+    font-weight: 600;
+  }
+  .content {
+    margin: 50px auto;
+    max-width: 1000px;   
+  }
+  .flex {
+    display: flex;
+    flex-direction: row; 
+  }
+  .left-box, .right-box {
+    flex: 1;
+  }
+  .left-box {
+    padding-right: 20px;
+  }
+  .right-box {
+    text-align: right;
+    background-color: #cccccc0f;
+    padding-right: 20px;
+  }
+  h1 {
+    margin-top: 0;
+    font-weight: 300;
+  }
+  h2 {
+    font-weight: 300;
+  }
+  @media screen and (max-width: 600px) {
+    .flex {
+      flex-direction: column; 
+    }
+  }
   </style>
 </head>
 <body>
-
+    <div class='content'>
+      <div class='flex'>
+        <div class='left-box'>
+          <h1>O cestě kolem světa</h1>
+          <p>
+            Ahoj! Jsem Jakub Mrozek a 9. 7. 2017 jsem vyrazil na <strong>cestu kolem světa</strong>.
+            <!-- Začal jsem v Mongolsku -->
+            
+          </p>
+          <p>
+            Sledovat mě můžete na <a href='https://www.facebook.com/DundeeVsSvet/'>Facebooku</a>.
+          </p>
+        </div>
+        <div class='right-box'>
+          <h2 class='list'>Seznam článků</h2>
+          <p>Zatím tady nic není, ale brzy bude.</p>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
