@@ -1,6 +1,9 @@
-body {
+  body {
     font-family: 'Open Sans', sans-serif;
     font-size: 110%;
+  }
+  a {
+    color: black;
   }
   strong {
     font-weight: 600;
@@ -16,7 +19,6 @@ body {
   }
   .menu a {
     padding: 5px;
-    color: black;
   }
   .menu a:hover, .menu a.active {
     background-color: black;
@@ -47,6 +49,9 @@ body {
   }
   h2 {
     font-weight: 300;
+  }
+  .perex {
+    color: grey;
   }
   @media screen and (max-width: 600px) {
     .flex {
