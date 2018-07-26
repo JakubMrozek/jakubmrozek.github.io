@@ -1,11 +1,25 @@
 {
   "albums": [
     {
-      "headline": "Cestování po Japonsku - fotostory z Kjóta",
+      "headline": "Cestování po Japonsku - Kjóto",
       "folder": "japonsko-kjoto",
       "sort": true,
-      "url": "cestovani-po-japonsku-fotostory-z-kjota.html",
+      "url": "cestovani-po-japonsku-kjoto.html",
       "desc": "Zenové chrámy a gionské gejši v Kjótu byly můj hlavní cíl ve východní Asii. Několik momentek z města, které bylo více než tisíc let hlavním městem Japonska a kam jezdil meditovat i Steve Jobs."
+    },
+    {
+      "headline": "Cestování po Japonsku - Osaka",
+      "folder": "japonsko-osaka",
+      "sort": true,
+      "url": "cestovani-po-japonsku-osaka.html",
+      "desc": "Kdybych si měl vybrat jedno město, kde bych chtěl v Asii žít, byla by to Osaka. Pár momentek ze staré i moderní Osaky."
+    },
+    {
+      "headline": "Cestování po Japonsku - Tokio",
+      "folder": "japonsko-tokio",
+      "sort": true,
+      "url": "cestovani-po-japonsku-tokio.html",
+      "desc": "Jak vypadá život v hlavním městě v mnoha ohledech nejvyspělejší země světa."
     }
   ]
 }
