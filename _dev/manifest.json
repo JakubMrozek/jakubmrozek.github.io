@@ -1,6 +1,13 @@
 {
   "albums": [
     {
+      "headline": "Cestování po Japonsku - Tři týdny od Nagasaki po Sapporo",
+      "folder": "le-tour-de-japan",
+      "sort": true,
+      "url": "cestovani-po-japonsku-le-tour-de-japan.html",
+      "desc": "Třítýdenní cesta po Japonsku. 1. Nagasaki. 2. Fukuoka. 3. Ostrov Mijadžima (Itsukushima). 4. Hirošima. 5. Kanazawa. 6. Himeji. 7. Nara. 8. Nagoya. 9. Nagano. 10. Sapporo."
+    },
+    {
       "headline": "Cestování po Japonsku - Kjóto",
       "folder": "japonsko-kjoto",
       "sort": true,
@@ -20,6 +27,13 @@
       "sort": true,
       "url": "cestovani-po-japonsku-tokio.html",
       "desc": "Jak vypadá život v hlavním městě v mnoha ohledech nejvyspělejší země světa."
+    },
+    {
+      "headline": "Cestování po Japonsku - Jaro v Tokiu",
+      "folder": "jaro-v-tokiu",
+      "sort": false,
+      "url": "cestovani-po-japonsku-jaro-v-tokiu.html",
+      "desc": "Sakury, kam se podíváš."
     }
   ]
 }

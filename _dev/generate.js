@@ -7,16 +7,27 @@ function sortByCaption (photos) {
   photos.sort((a, b) => {
     const [numA] = a.caption.split(')')
     const [numB] = b.caption.split(')')
-    return Number(numA) - Number(numB)
+    const nA = Number(numA)
+    const nB = Number(numB)
+    if (nA < nB) {
+      return -1
+    }
+    if (nA > nB) {
+      return 1
+    }
+    return 0
   })
 }
 
 function nl2br (photo) {
-  photo.caption = photo.caption.replace(/\n/g, '<br>')
+  if (!photo.caption) {
+    return
+  }
+  photo.caption = (photo.caption + '').replace(/\n/g, '<br>')
 }
 
 function removeNumber (photo) {
-  const [, ...caption] = photo.caption.split(')')
+  const [, ...caption] = (photo.caption + '').split(')')
   photo.caption = caption.join('').trim()
   return photo
 }
@@ -34,7 +45,7 @@ manifest.albums.forEach(album => {
     photos.forEach(removeNumber)
   }
   photos.forEach(nl2br)
-  const items = photos.map(photo => html.getHtmlItem(`${photo.IdPost}.jpg`, album.folder, photo.caption)).join('')
+  const items = photos.map(photo => html.getHtmlItem(`photo_${photo.IdPost}.jpg`, album.folder, photo.caption)).join('')
   const header = html.getHeader(album.headline)
   const menu = html.getMenu()
   const headline = html.getHeadline(album.headline, album.desc)

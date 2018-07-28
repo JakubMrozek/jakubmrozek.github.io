@@ -49,7 +49,7 @@ exports.getHtmlItem = (src, album, desc) => {
   const html = `
       <div class='flex album'>
         <div class='left-box'>
-          <p>${desc}</p>
+          <p>${desc || ''}</p>
         </div>
         <div class='right-box'>
           <p>
