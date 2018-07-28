@@ -1,39 +1,67 @@
 {
   "albums": [
     {
-      "headline": "Cestování po Japonsku - Tři týdny od Nagasaki po Sapporo",
+      "headline": "Japonsko - tři týdny od Nagasaki po Sapporo",
       "folder": "le-tour-de-japan",
       "sort": true,
-      "url": "cestovani-po-japonsku-le-tour-de-japan.html",
+      "url": "cestovani-po-japonsku-tri-tydny-od-nagasaki-po-sapporo.html",
       "desc": "Třítýdenní cesta po Japonsku. 1. Nagasaki. 2. Fukuoka. 3. Ostrov Mijadžima (Itsukushima). 4. Hirošima. 5. Kanazawa. 6. Himeji. 7. Nara. 8. Nagoya. 9. Nagano. 10. Sapporo."
     },
     {
-      "headline": "Cestování po Japonsku - Kjóto",
+      "headline": "Japonsko - Kjóto",
       "folder": "japonsko-kjoto",
       "sort": true,
       "url": "cestovani-po-japonsku-kjoto.html",
       "desc": "Zenové chrámy a gionské gejši v Kjótu byly můj hlavní cíl ve východní Asii. Několik momentek z města, které bylo více než tisíc let hlavním městem Japonska a kam jezdil meditovat i Steve Jobs."
     },
     {
-      "headline": "Cestování po Japonsku - Osaka",
+      "headline": "Japonsko - Osaka",
       "folder": "japonsko-osaka",
       "sort": true,
       "url": "cestovani-po-japonsku-osaka.html",
       "desc": "Kdybych si měl vybrat jedno město, kde bych chtěl v Asii žít, byla by to Osaka. Pár momentek ze staré i moderní Osaky."
     },
     {
-      "headline": "Cestování po Japonsku - Tokio",
+      "headline": "Japonsko - Tokio",
       "folder": "japonsko-tokio",
       "sort": true,
       "url": "cestovani-po-japonsku-tokio.html",
       "desc": "Jak vypadá život v hlavním městě v mnoha ohledech nejvyspělejší země světa."
     },
     {
-      "headline": "Cestování po Japonsku - Jaro v Tokiu",
+      "headline": "Japonsko - jaro v Tokiu",
       "folder": "jaro-v-tokiu",
       "sort": false,
       "url": "cestovani-po-japonsku-jaro-v-tokiu.html",
       "desc": "Sakury, kam se podíváš."
+    },
+    {
+      "headline": "Filipíny - ztroskotání na Bantayanu a Malapascua",
+      "folder": "ztroskotani-na-filipinach",
+      "sort": false,
+      "url": "cestovani-po-filipinach-ztroskotani.html",
+      "desc": "Už několikátý den jsem uvězněn na těchto ostrovech a čekám až přijdu na to, jak dále s jedním pedálem pokračovat. Abyste pochopili mé každodenní utrpení, přikládám několik fotek okolí."
+    },
+    {
+      "headline": "Mongolsko - momentky",
+      "folder": "mongolsko-jak-ho-neznate",
+      "sort": true,
+      "url": "cestovani-po-mongolsku-momentky.html",
+      "desc": "Něco málo o tom, jak vypadá běžný život v Mongolsku."
+    },
+    {
+      "headline": "Mongolsko - venkov",
+      "folder": "mongolsko-venkov",
+      "sort": true,
+      "url": "cestovani-po-mongolsku-venkov.html",
+      "desc": "Pár fotek z centrálního Mongolska."
+    },
+    {
+      "headline": "Mongolsko - Ulánbátar",
+      "folder": "mongolsko-ulaanbaatar",
+      "sort": true,
+      "url": "cestovani-po-mongolsku-ulanbatar.html",
+      "desc": "Pár fotek z první země na cestě kolem světa."
     }
   ]
 }
