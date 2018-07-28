@@ -54,10 +54,13 @@
     color: grey;
   }
   .album-item {
-    clear: both;
+    display: flex;
   }
   .album-item-photo {
-    float: left;
+    flex: 1;
+  }
+  .album-item-desc {
+    flex: 2;
   }
   @media screen and (max-width: 600px) {
     .flex {

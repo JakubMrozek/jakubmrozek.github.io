@@ -19,6 +19,12 @@ function sortByCaption (photos) {
   })
 }
 
+function sortByName (photos) {
+  photos.sort((a, b) => {
+    return a.IdPost.localeCompare(b.IdPost)
+  })
+}
+
 function nl2br (photo) {
   if (!photo.caption) {
     return
@@ -43,6 +49,8 @@ manifest.albums.forEach(album => {
   if (album.sort) {
     sortByCaption(photos)
     photos.forEach(removeNumber)
+  } else {
+    sortByName(photos)
   }
   photos.forEach(nl2br)
   const items = photos.map(photo => html.getHtmlItem(`photo_${photo.IdPost}.jpg`, album.folder, photo.caption)).join('')

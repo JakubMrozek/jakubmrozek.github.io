@@ -64,15 +64,17 @@ exports.getHtmlItem = (src, album, desc) => {
 exports.getHtmlItemAlbum = (url, headline, desc, album, mainPhoto) => {
   const html = `
     <div class='album-item'>
-      <h2>
-        <a href='./${url}'>${headline}</a>
-      </h2>
-      <p class='album-item-photo'>
+      <div class='album-item-photo'>
         <a href='./${url}'>
           <img src='./facebook/${album}/${mainPhoto}' width='300'>
         </a>
-      </p>
-      <!--<p class='album-item-desc'>${desc}</p>-->
+      </div>
+      <div class='album-item-desc'>
+        <h2>
+          <a href='./${url}'>${headline}</a>
+        </h2>
+        <p>${desc}</p>
+        </div>
     </div>
   `
   return html

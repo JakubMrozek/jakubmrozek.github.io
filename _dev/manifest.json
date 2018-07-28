@@ -1,6 +1,17 @@
 {
   "albums": [
     {
+      "headline": "Jižní Korea - Soul a okolí",
+      "folder": "jizni-korea",
+      "mainPhoto": "photo_2079583615385164.jpg",
+      "date": "",
+      "sort": true,
+      "inAlbums": true,
+      "menu": "alba.html",
+      "url": "cestovani-po-jizni-koreji-soul-a-okoli.html",
+      "desc": "Južná Kórea není příliš navštěvovaná země, pro mnoho lidí je to jen nucená zastávka na cestě do Japonska a málokdo zde míří jako do cílové destinace. Já zde strávím přibližně 5 týdnů, takže jsem se rozhodl Koreu prozkoumat důkladně a už první dny naznačily, že o bizár rozhodně nouze nebude! Do tohoto alba postupně přidám vše, co jste kdy chtěli vědět o Koreji (a možná i to, co jste raději vědět nechtěli)!"
+    },
+    {
       "headline": "Japonsko - tři týdny od Nagasaki po Sapporo",
       "folder": "le-tour-de-japan",
       "mainPhoto": "photo_2004556489554544.jpg",
@@ -181,7 +192,7 @@
       "desc": "Jak jsem vynalezl zbrusu nový způsob cestování tzv. cyklostopem."
     },
     {
-      "headline": "Do Itálie na Řecka (2. cyklojízda)",
+      "headline": "Z Itálie do Řecka (2. cyklojízda)",
       "folder": "z-italie-do-athen",
       "sort": true,
       "mainPhoto": "photo_1091477670862435.jpg",
@@ -194,20 +205,20 @@
       "headline": "Do Itálie na kole (1. cyklojízda)",
       "folder": "do-italie-na-kole",
       "sort": true,
-      "mainPhoto": "photo_1091447014198834.jpg",
+      "mainPhoto": "photo_1091404267536442.jpg",
       "inAlbums": true,
       "menu": "alba.html",
       "url": "z-ceska-do-italie-na-kole.html",
       "desc": "Jednoho dne mě napadlo, že bych mohl dojet na kole až k moři. Háček byl jen v tom, že jsem žádné kolo už 10 let neměl. A tak jsem si pár dní před odjezdem koupil první, na které jsem narazil, k tomu stan a celou kempingovou výbavu a s 25 kg nadváhy se vydal na cestu. Po 11 dnech jsem se dostal až do Itálie, do Trieste."
     },
     {
-      "headline": "Rok na cestě kolem světa",
-      "folder": "rok-na-ceste-kolem-sveta",
-      "sort": true,
+      "headline": "Timeline",
+      "folder": "timeline",
+      "sort": false,
       "inAlbums": false,
-      "menu": "rok-na-ceste-kolem-sveta.html",
-      "url": "rok-na-ceste-kolem-sveta.html",
-      "desc": ""
+      "menu": "alba.html",
+      "url": "timeline.html",
+      "desc": "Timeline"
     }
   ]
 }
