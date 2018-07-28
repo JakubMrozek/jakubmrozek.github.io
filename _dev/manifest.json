@@ -64,7 +64,7 @@
     {
       "headline": "Filipíny - ztroskotání na Bantayanu a Malapascua",
       "folder": "ztroskotani-na-filipinach",
-      "sort": false,
+      "sort": true,
       "mainPhoto": "photo_1907416722601855.jpg",
       "inAlbums": true,
       "menu": "alba.html",
@@ -94,7 +94,7 @@
     {
       "headline": "Vietnam - krajinky",
       "folder": "vietnam-krajinky",
-      "sort": false,
+      "sort": true,
       "mainPhoto": "photo_1761136787229850.jpg",
       "inAlbums": true,
       "menu": "alba.html",
