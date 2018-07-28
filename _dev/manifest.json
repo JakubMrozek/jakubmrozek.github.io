@@ -219,6 +219,15 @@
       "menu": "alba.html",
       "url": "timeline.html",
       "desc": "Timeline"
+    },
+    {
+      "headline": "Rok na cestě kolem světa",
+      "folder": "rok-na-ceste-kolem-sveta",
+      "sort": false,
+      "inAlbums": false,
+      "menu": "alba.html",
+      "url": "rok-na-ceste-kolem-sveta.html",
+      "desc": ""
     }
   ]
 }
