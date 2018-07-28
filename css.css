@@ -76,4 +76,7 @@
     img {
       width: 380px;
     }
+    .album-item {
+      display: block;
+    }
   }
