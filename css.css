@@ -73,6 +73,9 @@
       padding-left: 10px;
       text-align: left;
     }
+    .right-box.hp {
+      padding-left: 0;
+    }
     img {
       width: 380px;
     }
