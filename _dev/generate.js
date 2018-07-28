@@ -34,7 +34,7 @@ function nl2br (photo) {
 
 function removeNumber (photo) {
   const [, ...caption] = (photo.caption + '').split(')')
-  photo.caption = caption.join('').trim()
+  photo.caption = caption.join(')').trim()
   return photo
 }
 
