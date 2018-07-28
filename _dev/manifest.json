@@ -43,6 +43,20 @@
       "desc": "Už několikátý den jsem uvězněn na těchto ostrovech a čekám až přijdu na to, jak dále s jedním pedálem pokračovat. Abyste pochopili mé každodenní utrpení, přikládám několik fotek okolí."
     },
     {
+      "headline": "Čína - 2. část",
+      "folder": "cina-venkov",
+      "sort": true,
+      "url": "cestovani-po-cine-2.html",
+      "desc": "Z Kunmingu do Vietnamu na kole."
+    },
+    {
+      "headline": "Čína - 1. část",
+      "folder": "cina-mesta",
+      "sort": true,
+      "url": "cestovani-po-cine-1.html",
+      "desc": "Něco málo z XI'anu a Kunmingu a obecně o Číně."
+    },
+    {
       "headline": "Mongolsko - momentky",
       "folder": "mongolsko-jak-ho-neznate",
       "sort": true,
@@ -62,6 +76,13 @@
       "sort": true,
       "url": "cestovani-po-mongolsku-ulanbatar.html",
       "desc": "Pár fotek z první země na cestě kolem světa."
+    },
+    {
+      "headline": "Z Bulharska do Ázerbájdžánu na kole (4. cyklojízda)",
+      "folder": "z-bulharska-do-azerbajdzanu",
+      "sort": true,
+      "url": "z-bulharska-do-azerbajdzanu-na-kole.html",
+      "desc": "Moje doposud nejnáročnější tour přes Bulharsko, Turecko, Gruzii a Ázerbájdžán."
     }
   ]
 }
