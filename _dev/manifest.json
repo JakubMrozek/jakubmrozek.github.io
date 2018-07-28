@@ -3,21 +3,30 @@
     {
       "headline": "Japonsko - tři týdny od Nagasaki po Sapporo",
       "folder": "le-tour-de-japan",
+      "mainPhoto": "photo_2004556489554544.jpg",
       "sort": true,
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-japonsku-tri-tydny-od-nagasaki-po-sapporo.html",
       "desc": "Třítýdenní cesta po Japonsku. 1. Nagasaki. 2. Fukuoka. 3. Ostrov Mijadžima (Itsukushima). 4. Hirošima. 5. Kanazawa. 6. Himeji. 7. Nara. 8. Nagoya. 9. Nagano. 10. Sapporo."
     },
     {
       "headline": "Japonsko - Kjóto",
       "folder": "japonsko-kjoto",
+      "mainPhoto": "photo_1949821651694695.jpg",
       "sort": true,
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-japonsku-kjoto.html",
       "desc": "Zenové chrámy a gionské gejši v Kjótu byly můj hlavní cíl ve východní Asii. Několik momentek z města, které bylo více než tisíc let hlavním městem Japonska a kam jezdil meditovat i Steve Jobs."
     },
     {
       "headline": "Japonsko - Osaka",
       "folder": "japonsko-osaka",
+      "mainPhoto": "photo_1947378081939052.jpg",
       "sort": true,
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-japonsku-osaka.html",
       "desc": "Kdybych si měl vybrat jedno město, kde bych chtěl v Asii žít, byla by to Osaka. Pár momentek ze staré i moderní Osaky."
     },
@@ -25,6 +34,9 @@
       "headline": "Japonsko - Tokio",
       "folder": "japonsko-tokio",
       "sort": true,
+      "mainPhoto": "photo_1943908832285977.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-japonsku-tokio.html",
       "desc": "Jak vypadá život v hlavním městě v mnoha ohledech nejvyspělejší země světa."
     },
@@ -32,6 +44,9 @@
       "headline": "Japonsko - jaro v Tokiu",
       "folder": "jaro-v-tokiu",
       "sort": false,
+      "mainPhoto": "photo_1926890570654470.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-japonsku-jaro-v-tokiu.html",
       "desc": "Sakury, kam se podíváš."
     },
@@ -39,6 +54,9 @@
       "headline": "Filipíny - ztroskotání na Bantayanu a Malapascua",
       "folder": "ztroskotani-na-filipinach",
       "sort": false,
+      "mainPhoto": "photo_1907416722601855.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-filipinach-ztroskotani.html",
       "desc": "Už několikátý den jsem uvězněn na těchto ostrovech a čekám až přijdu na to, jak dále s jedním pedálem pokračovat. Abyste pochopili mé každodenní utrpení, přikládám několik fotek okolí."
     },
@@ -46,6 +64,9 @@
       "headline": "Thajsko - jeden den na cestě kolem světa",
       "folder": "jeden-den-na-ceste-kolem-sveta",
       "sort": true,
+      "mainPhoto": "photo_1858607654149429.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-thajsku-jeden-den-na-ceste-kolem-sveta.html",
       "desc": "Jeden cykloden v Thajsku od rána až do večera."
     },
@@ -53,6 +74,9 @@
       "headline": "Vietnam a Laos - na kole z Hanoje do Vientiane",
       "folder": "z-hanoje-do-vientiane",
       "sort": true,
+      "mainPhoto": "photo_1830424493634412.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-vietnamu-a-laosu-na-kole-z-hanoje-do-vientiane.html",
       "desc": "Cyklovýlet z hlavního města Vietnamu do hlavního města Laosu."
     },
@@ -60,6 +84,9 @@
       "headline": "Vietnam - krajinky",
       "folder": "vietnam-krajinky",
       "sort": false,
+      "mainPhoto": "photo_1761136787229850.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-vietnamu-krajinky.html",
       "desc": "Pár fotek krajinek z prvních dnů mototour po Vietnamu (Sa Pa, Yên Bái, Lao Cài a okolí)."
     },
@@ -67,6 +94,9 @@
       "headline": "Vietnam (+ krátká návštěva Bangkoku)",
       "folder": "vietnam-plus-bangkok",
       "sort": true,
+      "mainPhoto": "photo_1810964555580406.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-vietnamu-vietnam-plus-bangkok.html",
       "desc": "Fotostory z Vietnamu s krátkou zastávkou v Bangkoku."
     },
@@ -74,6 +104,9 @@
       "headline": "Čína - 2. část",
       "folder": "cina-venkov",
       "sort": true,
+      "mainPhoto": "photo_1692066364136893.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-cine-2.html",
       "desc": "Z Kunmingu do Vietnamu na kole."
     },
@@ -81,6 +114,9 @@
       "headline": "Čína - 1. část",
       "folder": "cina-mesta",
       "sort": true,
+      "mainPhoto": "/photo_1680860048590858.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-cine-1.html",
       "desc": "Něco málo z XI'anu a Kunmingu a obecně o Číně."
     },
@@ -88,6 +124,9 @@
       "headline": "Mongolsko - momentky",
       "folder": "mongolsko-jak-ho-neznate",
       "sort": true,
+      "mainPhoto": "photo_1646487245361472.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-mongolsku-momentky.html",
       "desc": "Něco málo o tom, jak vypadá běžný život v Mongolsku."
     },
@@ -95,6 +134,9 @@
       "headline": "Mongolsko - venkov",
       "folder": "mongolsko-venkov",
       "sort": true,
+      "mainPhoto": "photo_1638106882866175.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-mongolsku-venkov.html",
       "desc": "Pár fotek z centrálního Mongolska."
     },
@@ -102,6 +144,9 @@
       "headline": "Mongolsko - Ulánbátar",
       "folder": "mongolsko-ulaanbaatar",
       "sort": true,
+      "mainPhoto": "photo_1636201423056721.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "cestovani-po-mongolsku-ulanbatar.html",
       "desc": "Pár fotek z první země na cestě kolem světa."
     },
@@ -109,6 +154,9 @@
       "headline": "Z Bulharska do Ázerbájdžánu na kole (4. cyklojízda)",
       "folder": "z-bulharska-do-azerbajdzanu",
       "sort": true,
+      "mainPhoto": "photo_1311674595509407.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "z-bulharska-do-azerbajdzanu-na-kole.html",
       "desc": "Moje doposud nejnáročnější tour přes Bulharsko, Turecko, Gruzii a Ázerbájdžán."
     },
@@ -116,15 +164,50 @@
       "headline": "Z Řecka do Turecka na kole (3. cyklojízda)",
       "folder": "z-athen-do-istanbulu",
       "sort": true,
+      "mainPhoto": "photo_1209067705770097.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "z-recka-do-turecka-na-kole.html",
       "desc": "Cca 1600 km z hlavního města Řecka do největšího města Evropy. Je tam vše od kachniček až po Turka, který mi chtěl prodat ženu."
+    },
+    {
+      "headline": "Cyklostopem po Austrálii",
+      "folder": "australie",
+      "sort": true,
+      "mainPhoto": "photo_1109729855703883.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
+      "url": "cyklostopem-po-australii.html",
+      "desc": "Jak jsem vynalezl zbrusu nový způsob cestování tzv. cyklostopem."
+    },
+    {
+      "headline": "Do Itálie na Řecka (2. cyklojízda)",
+      "folder": "z-italie-do-athen",
+      "sort": true,
+      "mainPhoto": "photo_1091477670862435.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
+      "url": "z-italie-do-recka-na-kole.html",
+      "desc": "Kterak synek český do Athén na kole dojel."
     },
     {
       "headline": "Do Itálie na kole (1. cyklojízda)",
       "folder": "do-italie-na-kole",
       "sort": true,
+      "mainPhoto": "photo_1091447014198834.jpg",
+      "inAlbums": true,
+      "menu": "alba.html",
       "url": "z-ceska-do-italie-na-kole.html",
       "desc": "Jednoho dne mě napadlo, že bych mohl dojet na kole až k moři. Háček byl jen v tom, že jsem žádné kolo už 10 let neměl. A tak jsem si pár dní před odjezdem koupil první, na které jsem narazil, k tomu stan a celou kempingovou výbavu a s 25 kg nadváhy se vydal na cestu. Po 11 dnech jsem se dostal až do Itálie, do Trieste."
+    },
+    {
+      "headline": "Rok na cestě kolem světa",
+      "folder": "rok-na-ceste-kolem-sveta",
+      "sort": true,
+      "inAlbums": false,
+      "menu": "rok-na-ceste-kolem-sveta.html",
+      "url": "rok-na-ceste-kolem-sveta.html",
+      "desc": ""
     }
   ]
 }

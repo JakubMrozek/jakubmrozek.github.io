@@ -47,7 +47,7 @@ manifest.albums.forEach(album => {
   photos.forEach(nl2br)
   const items = photos.map(photo => html.getHtmlItem(`photo_${photo.IdPost}.jpg`, album.folder, photo.caption)).join('')
   const header = html.getHeader(album.headline)
-  const menu = html.getMenu()
+  const menu = html.getMenu(album.menu)
   const headline = html.getHeadline(album.headline, album.desc)
   const footer = html.getFooter()
   const page = [header, menu, headline, items, footer].join('')
@@ -56,10 +56,16 @@ manifest.albums.forEach(album => {
 
 // generate album index
 {
-  const items = manifest.albums.map(album => html.getHtmlItemAlbum(album.url, album.headline, album.desc)).join('')
-  const header = html.getHeader('Alba')
-  const menu = html.getMenu()
-  const headline = html.getHeadline('Alba', 'Seznam alb z cesty kolem světa.')
+  const items = manifest
+  .albums
+  .filter(album => album.inAlbums)
+  .map(album => {
+    return html.getHtmlItemAlbum(album.url, album.headline, album.desc, album.folder, album.mainPhoto)
+  })
+  .join('')
+  const header = html.getHeader('Alba a cestopisy')
+  const menu = html.getMenu('alba.html')
+  const headline = html.getHeadline('Alba a cestopisy', 'Seznam alb (cestopisů) z cesty kolem světa.')
   const footer = html.getFooter()
   const page = [header, menu, headline, items, footer].join('')
   writeFile('alba.html', page)

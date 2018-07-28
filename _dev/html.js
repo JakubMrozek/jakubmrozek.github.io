@@ -26,12 +26,12 @@ exports.getFooter = () => {
   return html
 }
 
-exports.getMenu = () => {
+exports.getMenu = (active) => {
   const html = `
       <menu class='menu'>
-        <a href='index.html'>Domů</a>
-        <a href='rok-na-ceste-kolem-sveta.html'>Rok na cestě kolem světa</a>
-        <a class='active' href='alba.html'>Alba</a>
+        <a ${active === 'index.html' ? 'class=\'active\'' : ''}href='index.html'>Domů</a>
+        <a ${active === 'rok-na-ceste-kolem-sveta.html' ? 'class=\'active\'' : ''}href='rok-na-ceste-kolem-sveta.html'>Rok na cestě kolem světa</a>
+        <a ${active === 'alba.html' ? 'class=\'active\'' : ''}href='alba.html'>Alba a cestopisy</a>
       </menu>
     `
   return html
@@ -61,11 +61,18 @@ exports.getHtmlItem = (src, album, desc) => {
   return html
 }
 
-exports.getHtmlItemAlbum = (url, headline, desc) => {
+exports.getHtmlItemAlbum = (url, headline, desc, album, mainPhoto) => {
   const html = `
     <div class='album-item'>
-      <h2><a href='./${url}'>${headline}</a></h2>
-      <p>${desc}</p>
+      <h2>
+        <a href='./${url}'>${headline}</a>
+      </h2>
+      <p class='album-item-photo'>
+        <a href='./${url}'>
+          <img src='./facebook/${album}/${mainPhoto}' width='300'>
+        </a>
+      </p>
+      <!--<p class='album-item-desc'>${desc}</p>-->
     </div>
   `
   return html
