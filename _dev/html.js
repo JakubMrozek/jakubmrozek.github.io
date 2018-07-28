@@ -37,9 +37,9 @@ exports.getMenu = (active) => {
   return html
 }
 
-exports.getHeadline = (headline, desc) => {
+exports.getHeadline = (headline, desc, date) => {
   const html = `
-      <h1>${headline}</h1>
+      <h1>${headline} <span class='date'>${date || ''}</span></h1>
       <p class='perex'>${desc}</p>
     `
   return html
