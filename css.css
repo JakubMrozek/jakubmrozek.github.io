@@ -67,6 +67,10 @@
     margin-left: 5px;
     color: #b3b3b3;
   }
+  .comments a {
+    color: gray;
+    font-size: 120%;
+  }
   @media screen and (max-width: 600px) {
     .flex {
       flex-direction: column; 

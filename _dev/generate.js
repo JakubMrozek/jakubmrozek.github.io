@@ -57,7 +57,7 @@ manifest.albums.forEach(album => {
   const header = html.getHeader(album.headline)
   const menu = html.getMenu(album.menu)
   const headline = html.getHeadline(album.headline, album.desc, album.date)
-  const footer = html.getFooter()
+  const footer = html.getFooter(album.comments)
   const page = [header, menu, headline, items, footer].join('')
   writeFile(album.url, page)
 })

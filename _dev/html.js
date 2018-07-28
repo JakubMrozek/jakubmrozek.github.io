@@ -17,8 +17,9 @@ exports.getHeader = (headline) => {
   return html
 }
 
-exports.getFooter = () => {
+exports.getFooter = (comments) => {
   const html = `
+          ${comments ? '<p class=\'comments\'><a target=\'_blank\' href=\'' + comments + '\'>Komentáře</a></p>' : ''}
           </div>
         </body>
       </html>

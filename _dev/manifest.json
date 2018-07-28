@@ -228,6 +228,7 @@
       "date": "léto 2014",
       "inAlbums": true,
       "menu": "alba.html",
+      "comments": "https://www.facebook.com/media/set/?set=a.1091395170870685.1073741828.1086933947983474&type=1&l=8875abb466",
       "url": "z-ceska-do-italie-na-kole.html",
       "desc": "Jednoho dne mě napadlo, že bych mohl dojet na kole až k moři. A tak jsem si pár dní před odjezdem koupil kolo, stan a celou kempingovou výbavu a s 25 kg nadváhy se vydal na cestu. Po 11 dnech jsem se dostal až do Itálie do Trieste."
     },
@@ -238,7 +239,8 @@
       "inAlbums": false,
       "menu": "alba.html",
       "url": "timeline.html",
-      "desc": "Timeline"
+      "desc": "Timeline",
+      "ok": true
     },
     {
       "headline": "Rok na cestě kolem světa",
@@ -247,7 +249,8 @@
       "inAlbums": false,
       "menu": "rok-na-ceste-kolem-sveta.html",
       "url": "rok-na-ceste-kolem-sveta.html",
-      "desc": ""
+      "desc": "",
+      "ok": true
     }
   ]
 }
