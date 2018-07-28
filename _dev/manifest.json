@@ -177,7 +177,7 @@
       "desc": "Pár fotek z první země na cestě kolem světa."
     },
     {
-      "headline": "Z Bulharska do Ázerbájdžánu na kole (4. cyklojízda)",
+      "headline": "Z Bulharska do Ázerbájdžánu na kole (4. cesta)",
       "folder": "z-bulharska-do-azerbajdzanu",
       "sort": true,
       "mainPhoto": "photo_1311674595509407.jpg",
@@ -188,7 +188,7 @@
       "desc": "Moje doposud nejnáročnější tour přes Bulharsko, Turecko, Gruzii a Ázerbájdžán."
     },
     {
-      "headline": "Z Řecka do Turecka na kole (3. cyklojízda)",
+      "headline": "Z Řecka do Turecka na kole (3. cesta)",
       "folder": "z-athen-do-istanbulu",
       "sort": true,
       "mainPhoto": "photo_1209067705770097.jpg",
@@ -210,7 +210,7 @@
       "desc": "Jak jsem vynalezl zbrusu nový způsob cestování tzv. cyklostopem."
     },
     {
-      "headline": "Z Itálie do Řecka (2. cyklojízda)",
+      "headline": "Z Itálie do Řecka (2. cesta)",
       "folder": "z-italie-do-athen",
       "sort": true,
       "mainPhoto": "photo_1091477670862435.jpg",
@@ -221,7 +221,7 @@
       "desc": "Kterak synek český do Athén na kole dojel."
     },
     {
-      "headline": "Do Itálie na kole (1. cyklojízda)",
+      "headline": "Do Itálie na kole (1. cesta)",
       "folder": "do-italie-na-kole",
       "sort": true,
       "mainPhoto": "photo_1091404267536442.jpg",
@@ -245,7 +245,7 @@
       "folder": "rok-na-ceste-kolem-sveta",
       "sort": true,
       "inAlbums": false,
-      "menu": "alba.html",
+      "menu": "rok-na-ceste-kolem-sveta.html",
       "url": "rok-na-ceste-kolem-sveta.html",
       "desc": ""
     }
