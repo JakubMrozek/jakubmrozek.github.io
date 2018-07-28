@@ -61,7 +61,7 @@ exports.getHtmlItem = (src, album, desc) => {
   return html
 }
 
-exports.getHtmlItemAlbum = (url, headline, desc, album, mainPhoto) => {
+exports.getHtmlItemAlbum = (url, headline, desc, album, mainPhoto, date) => {
   const html = `
     <div class='album-item'>
       <div class='album-item-photo'>
@@ -71,7 +71,7 @@ exports.getHtmlItemAlbum = (url, headline, desc, album, mainPhoto) => {
       </div>
       <div class='album-item-desc'>
         <h2>
-          <a href='./${url}'>${headline}</a>
+          <a href='./${url}'>${headline}</a> <span class='date'>${date || ''}</span>
         </h2>
         <p>${desc}</p>
         </div>

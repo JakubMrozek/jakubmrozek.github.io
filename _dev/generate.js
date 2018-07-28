@@ -68,7 +68,7 @@ manifest.albums.forEach(album => {
   .albums
   .filter(album => album.inAlbums)
   .map(album => {
-    return html.getHtmlItemAlbum(album.url, album.headline, album.desc, album.folder, album.mainPhoto)
+    return html.getHtmlItemAlbum(album.url, album.headline, album.desc, album.folder, album.mainPhoto, album.date)
   })
   .join('')
   const header = html.getHeader('Alba a cestopisy')
