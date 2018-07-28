@@ -43,6 +43,34 @@
       "desc": "Už několikátý den jsem uvězněn na těchto ostrovech a čekám až přijdu na to, jak dále s jedním pedálem pokračovat. Abyste pochopili mé každodenní utrpení, přikládám několik fotek okolí."
     },
     {
+      "headline": "Thajsko - jeden den na cestě kolem světa",
+      "folder": "jeden-den-na-ceste-kolem-sveta",
+      "sort": true,
+      "url": "cestovani-po-thajsku-jeden-den-na-ceste-kolem-sveta.html",
+      "desc": "Jeden cykloden v Thajsku od rána až do večera."
+    },
+    {
+      "headline": "Vietnam a Laos - na kole z Hanoje do Vientiane",
+      "folder": "z-hanoje-do-vientiane",
+      "sort": true,
+      "url": "cestovani-po-vietnamu-a-laosu-na-kole-z-hanoje-do-vientiane.html",
+      "desc": "Cyklovýlet z hlavního města Vietnamu do hlavního města Laosu."
+    },
+    {
+      "headline": "Vietnam - krajinky",
+      "folder": "vietnam-krajinky",
+      "sort": false,
+      "url": "cestovani-po-vietnamu-krajinky.html",
+      "desc": "Pár fotek krajinek z prvních dnů mototour po Vietnamu (Sa Pa, Yên Bái, Lao Cài a okolí)."
+    },
+    {
+      "headline": "Vietnam (+ krátká návštěva Bangkoku)",
+      "folder": "vietnam-plus-bangkok",
+      "sort": true,
+      "url": "cestovani-po-vietnamu-vietnam-plus-bangkok.html",
+      "desc": "Fotostory z Vietnamu s krátkou zastávkou v Bangkoku."
+    },
+    {
       "headline": "Čína - 2. část",
       "folder": "cina-venkov",
       "sort": true,
@@ -83,6 +111,13 @@
       "sort": true,
       "url": "z-bulharska-do-azerbajdzanu-na-kole.html",
       "desc": "Moje doposud nejnáročnější tour přes Bulharsko, Turecko, Gruzii a Ázerbájdžán."
+    },
+    {
+      "headline": "Z Řecka do Turecka na kole (3. cyklojízda)",
+      "folder": "z-athen-do-istanbulu",
+      "sort": true,
+      "url": "z-recka-do-turecka-na-kole.html",
+      "desc": "Cca 1600 km z hlavního města Řecka do největšího města Evropy. Je tam vše od kachniček až po Turka, který mi chtěl prodat ženu."
     },
     {
       "headline": "Do Itálie na kole (1. cyklojízda)",
