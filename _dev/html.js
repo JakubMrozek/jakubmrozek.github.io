@@ -32,7 +32,7 @@ exports.getMenu = (active) => {
       <menu class='menu'>
         <a ${active === 'index.html' ? 'class=\'active\'' : ''}href='index.html'>Domů</a>
         <a ${active === 'rok-na-ceste-kolem-sveta.html' ? 'class=\'active\'' : ''}href='rok-na-ceste-kolem-sveta.html'>Rok na cestě kolem světa</a>
-        <a ${active === 'alba.html' ? 'class=\'active\'' : ''}href='alba.html'>Alba</a>
+        <a ${active === 'alba.html' ? 'class=\'active\'' : ''}href='alba.html'>Alba a cestopisy</a>
         <a ${active === 'blog.html' ? 'class=\'active\'' : ''}href='blog.html'>Blog</a>
       </menu>
     `
