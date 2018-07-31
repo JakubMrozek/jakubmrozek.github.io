@@ -90,25 +90,26 @@ manifest.albums.forEach(album => {
   writeFile('index.html', page)
 }
 
-// generate index
+// generate blog
 {
   const header = html.getHeader('Blog')
   const menu = html.getMenu('blog.html')
-  // nacist vsechny posty
+  const headline = html.getHeadline('Blog', 'Seznam příspěvků povětšinou z Facebooku.')
   const dir = fs.readdirSync(path.join(__dirname, '..', 'posts'))
   const contents = []
   for (let key in dir) {
     const [id] = dir[key].split('.')
     const post = fs.readFileSync(path.join(__dirname, '..', 'posts', dir[key])).toString('utf8')
-    const [date, headline, url, , , ...contentParts] = post.split(/\n/)
+    const [date, headline, url, image, , , ...contentParts] = post.split(/\n/)
     const [perex, text] = contentParts.join('\n').split('---perex---')
     contents.push({
       id,
       url,
       date,
+      image,
       headline,
-      perex,
-      content: markdown.toHTML([perex, text].join('\n'))
+      perex: markdown.toHTML(perex),
+      content: markdown.toHTML(text)
     })
   }
   contents.sort((a, b) => a.id > b.id ? 1 : -1)
@@ -125,6 +126,6 @@ manifest.albums.forEach(album => {
   })
   .join('')
   const footer = html.getFooter()
-  const page = [header, menu, items, footer].join('')
+  const page = [header, menu, headline, items, footer].join('')
   writeFile('blog.html', page)
 }

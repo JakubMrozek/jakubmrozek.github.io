@@ -106,23 +106,46 @@ exports.getIndexContent = () => {
   return html
 }
 
-exports.getHtmlItemPost = ({url, date, headline, perex}) => {
+exports.getHtmlItemPost = ({url, date, headline, image, perex}) => {
   const html = `
-    <h2 style='blog-headline'>
-      <a href='${url}'>${headline}</a>
-    </h2>
-    <p style='blog-date'>${date}</p>
-    <div style='blog-perex'>${perex}</div>
-    <p><a href='${url}'>Číst více</a></p>
+    <div class='blog-item'>
+      <div class='blog-item-left'>
+        <img class='blog-item-img' src='${image}' />
+      </div>
+      <div class='blog-item-right'>
+        <h2 class='blog-headline'>
+          <a href='${url}'>${headline}</a>
+          <span class='blog-date'>${date}</span>
+        </h2>
+        <div class='blog-perex'>${perex}</div>
+        <p class='blog-link-next'>
+          <a href='${url}'>Číst více</a>
+        </p>
+      </div>
+    </div>
     `
   return html
 }
 
-exports.getHtmlPost = ({url, date, headline, content}) => {
+exports.getHtmlPost = ({url, date, headline, perex, image, content}) => {
   const html = `
-    <h2 style='blog-headline'>${headline}</h2>
-    <p style='blog-date'>${date}</p>
-    <div style='blog-content'>${content}</div>
-    `
+    <div class='blog-post'>
+      <h2 class='blog-headline'>
+        ${headline}
+        <span class='blog-date'>${date}</span>
+      </h2>
+      <div class='blog-post-inside'>
+        <div class='blog-post-left'>
+          <div class='blog-content'>
+          ${perex}
+          ${content}
+          </div>
+        </div>
+        <div class='blog-post-right'>
+          <img class='blog-post-img' src='${image}' />
+        </div>
+      </div>
+    </div>
+  `
   return html
 }
