@@ -80,6 +80,9 @@
   .blog-item-left {
     flex: 1;
   }
+  .blog-item-left a {
+    border-bottom: 0;
+  }
   .blog-item-right {
     flex: 2;
   }
