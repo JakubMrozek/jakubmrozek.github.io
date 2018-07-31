@@ -112,7 +112,7 @@ manifest.albums.forEach(album => {
       content: markdown.toHTML(text)
     })
   }
-  contents.sort((a, b) => a.id > b.id ? 1 : -1)
+  contents.sort((a, b) => Number(a.id) > Number(b.id) ? 1 : -1)
   contents.reverse()
   const items = contents
   .map(item => {
