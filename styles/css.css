@@ -73,7 +73,6 @@
   }
   .blog-item {
     display: flex;
-    margin: 20px 0;
   }
   .blog-item-left {
     flex: 1;
