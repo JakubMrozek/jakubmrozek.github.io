@@ -1,5 +1,6 @@
 const path = require('path')
 const fs = require('fs')
+const markdown = require('markdown').markdown
 const html = require('./html')
 const manifest = require('./manifest.json')
 
@@ -77,4 +78,52 @@ manifest.albums.forEach(album => {
   const footer = html.getFooter()
   const page = [header, menu, headline, items, footer].join('')
   writeFile('alba.html', page)
+}
+
+// generate index
+{
+  const header = html.getHeader('Alba a cestopisy')
+  const menu = html.getMenu('index.html')
+  const content = html.getIndexContent()
+  const footer = html.getFooter()
+  const page = [header, menu, content, footer].join('')
+  writeFile('index.html', page)
+}
+
+// generate index
+{
+  const header = html.getHeader('Blog')
+  const menu = html.getMenu('blog.html')
+  // nacist vsechny posty
+  const dir = fs.readdirSync(path.join(__dirname, '..', 'posts'))
+  const contents = []
+  for (let key in dir) {
+    const [id] = dir[key].split('.')
+    const post = fs.readFileSync(path.join(__dirname, '..', 'posts', dir[key])).toString('utf8')
+    const [date, headline, url, , , ...contentParts] = post.split(/\n/)
+    const [perex, text] = contentParts.join('\n').split('---perex---')
+    contents.push({
+      id,
+      url,
+      date,
+      headline,
+      perex,
+      content: markdown.toHTML([perex, text].join('\n'))
+    })
+  }
+
+  const items = contents
+  .map(item => {
+    const header = html.getHeader(item.headline)
+    const menu = html.getMenu('blog.html')
+    const content = html.getHtmlPost(item)
+    const footer = html.getFooter()
+    const page = [header, menu, content, footer].join('')
+    writeFile(item.url, page)
+    return html.getHtmlItemPost(item)
+  })
+  .join('')
+  const footer = html.getFooter()
+  const page = [header, menu, items, footer].join('')
+  writeFile('blog.html', page)
 }
