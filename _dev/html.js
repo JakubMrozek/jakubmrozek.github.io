@@ -110,7 +110,9 @@ exports.getHtmlItemPost = ({url, date, headline, image, perex}) => {
   const html = `
     <div class='blog-item'>
       <div class='blog-item-left'>
-        <img class='blog-item-img' src='${image}' />
+        <a href='${url}'>
+          <img class='blog-item-img' src='${image}' />
+        </a>
       </div>
       <div class='blog-item-right'>
         <h2 class='blog-headline'>

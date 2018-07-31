@@ -74,7 +74,7 @@ manifest.albums.forEach(album => {
   .join('')
   const header = html.getHeader('Alba a cestopisy')
   const menu = html.getMenu('alba.html')
-  const headline = html.getHeadline('Alba a cestopisy', 'Seznam alb (cestopisů) z cesty kolem světa a několik dalších alb o cestě z Česka do Ázerbájdžánu na kole přes Austrálii.')
+  const headline = html.getHeadline('Alba a cestopisy', 'Seznam alb (cestopisů) z cesty kolem světa a několik dalších alb o cestě z Česka do Ázerbájdžánu.')
   const footer = html.getFooter()
   const page = [header, menu, headline, items, footer].join('')
   writeFile('alba.html', page)
@@ -108,7 +108,7 @@ manifest.albums.forEach(album => {
       date,
       image,
       headline,
-      perex: markdown.toHTML(perex),
+      perex,
       content: markdown.toHTML(text)
     })
   }
