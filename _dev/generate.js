@@ -111,7 +111,8 @@ manifest.albums.forEach(album => {
       content: markdown.toHTML([perex, text].join('\n'))
     })
   }
-
+  contents.sort((a, b) => a.id > b.id ? 1 : -1)
+  contents.reverse()
   const items = contents
   .map(item => {
     const header = html.getHeader(item.headline)
