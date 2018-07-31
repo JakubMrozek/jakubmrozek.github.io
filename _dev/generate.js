@@ -100,7 +100,7 @@ manifest.albums.forEach(album => {
   for (let key in dir) {
     const [id] = dir[key].split('.')
     const post = fs.readFileSync(path.join(__dirname, '..', 'posts', dir[key])).toString('utf8')
-    const [date, headline, url, image, , , ...contentParts] = post.split(/\n/)
+    const [date, headline, url, image, images, , ...contentParts] = post.split(/\n/)
     const [perex, text] = contentParts.join('\n').split('---perex---')
     contents.push({
       id,
