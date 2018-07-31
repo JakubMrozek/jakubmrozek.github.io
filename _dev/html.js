@@ -151,3 +151,31 @@ exports.getHtmlPost = ({url, date, headline, perex, image, content}) => {
   `
   return html
 }
+
+exports.getPagination = (parts, current) => {
+  let lastPage = 1
+  const pages = []
+  parts.forEach((items, key) => {
+    pages.push({
+      name: `${lastPage} - ${Number(lastPage + items.length - 1)}`,
+      url: key ? `blog-${key}.html` : 'blog.html',
+      current: key === current
+    })
+    lastPage = lastPage + items.length
+  })
+  const posts = pages.map(page => {
+    if (page.current) {
+      return `<span class='blog-pagination-page'>${page.name}</span>`
+    } else {
+      return `<a href='${page.url}' class='blog-pagination-page'>${page.name}</a>`
+    }
+  }).join(' | ')
+  const html = `
+    <div class='blog-pagination'>
+      <p class='blog-pagination-text'>
+        Příspěvky: ${posts}
+      </p>
+    </div>
+  `
+  return html
+}

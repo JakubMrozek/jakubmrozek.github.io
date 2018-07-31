@@ -92,15 +92,12 @@ manifest.albums.forEach(album => {
 
 // generate blog
 {
-  const header = html.getHeader('Blog')
-  const menu = html.getMenu('blog.html')
-  const headline = html.getHeadline('Blog', 'Seznam příspěvků povětšinou z Facebooku.')
   const dir = fs.readdirSync(path.join(__dirname, '..', 'posts'))
   const contents = []
   for (let key in dir) {
     const [id] = dir[key].split('.')
     const post = fs.readFileSync(path.join(__dirname, '..', 'posts', dir[key])).toString('utf8')
-    const [date, headline, url, image, images, , ...contentParts] = post.split(/\n/)
+    const [date, headline, url, image, , , ...contentParts] = post.split(/\n/)
     const [perex, text] = contentParts.join('\n').split('---perex---')
     contents.push({
       id,
@@ -124,8 +121,26 @@ manifest.albums.forEach(album => {
     writeFile(item.url, page)
     return html.getHtmlItemPost(item)
   })
-  .join('')
-  const footer = html.getFooter()
-  const page = [header, menu, headline, items, footer].join('')
-  writeFile('blog.html', page)
+
+  const parts = [[]]
+  let lastId = 0
+  items.forEach(item => {
+    if (parts[lastId].length === 10) {
+      lastId += 1
+    }
+    if (!parts[lastId]) {
+      parts[lastId] = []
+    }
+    parts[lastId].push(item)
+  })
+
+  parts.forEach((items, key) => {
+    const header = html.getHeader('Blog')
+    const menu = html.getMenu('blog.html')
+    const pagination = html.getPagination(parts, key)
+    const headline = html.getHeadline('Blog', pagination)
+    const footer = html.getFooter()
+    const page = [header, menu, headline, ...items, pagination, footer].join('')
+    writeFile(`blog${key ? '-' + key : ''}.html`, page)
+  })
 }
