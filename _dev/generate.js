@@ -82,7 +82,7 @@ manifest.albums.forEach(album => {
 
 // generate index
 {
-  const header = html.getHeader('Alba a cestopisy')
+  const header = html.getHeader()
   const menu = html.getMenu('index.html')
   const content = html.getIndexContent()
   const footer = html.getFooter()
