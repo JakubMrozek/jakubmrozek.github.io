@@ -44,6 +44,8 @@ function writeFile (url, data) {
   fs.writeFileSync(file, data)
 }
 
+let length = 0
+
 // generate albums
 manifest.albums.forEach(album => {
   let photos = require(`../facebook/${album.folder}/json.json`)
@@ -54,6 +56,10 @@ manifest.albums.forEach(album => {
     sortByName(photos)
   }
   photos.forEach(nl2br)
+  length += album.desc.length
+  photos.forEach(photo => {
+    length += (photo.caption || '').length
+  })
   const items = photos.map(photo => html.getHtmlItem(`photo_${photo.IdPost}.jpg`, album.folder, photo.caption)).join('')
   const header = html.getHeader(album.headline)
   const menu = html.getMenu(album.menu)
@@ -99,6 +105,7 @@ manifest.albums.forEach(album => {
     const post = fs.readFileSync(path.join(__dirname, '..', 'posts', dir[key])).toString('utf8')
     const [date, headline, url, image, , , ...contentParts] = post.split(/\n/)
     const [perex, text] = contentParts.join('\n').split('---perex---')
+    length += (perex.length + text.length)
     contents.push({
       id,
       url,
