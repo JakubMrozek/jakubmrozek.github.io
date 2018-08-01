@@ -133,4 +133,10 @@
     .album-item {
       display: block;
     }
+    .blog-item {
+      display: block;
+    }
+    .blog-post-inside {
+      display: block;
+    }
   }

@@ -173,7 +173,7 @@ exports.getPagination = (parts, current) => {
   const html = `
     <div class='blog-pagination'>
       <p class='blog-pagination-text'>
-        Příspěvky: ${posts}
+        Stránkování: ${posts}
       </p>
     </div>
   `
