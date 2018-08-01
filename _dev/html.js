@@ -12,7 +12,6 @@ exports.getHeader = (headline) => {
       <link rel="stylesheet" href="styles/css.css">
     </head>
     <body>
-      <div class='content'>
     `
   return html
 }
@@ -29,12 +28,13 @@ exports.getFooter = (comments) => {
 
 exports.getMenu = (active) => {
   const html = `
-      <menu class='menu'>
-        <a ${active === 'index.html' ? 'class=\'active\'' : ''}href='index.html'>Domů</a>
-        <a ${active === 'rok-na-ceste-kolem-sveta.html' ? 'class=\'active\'' : ''}href='rok-na-ceste-kolem-sveta.html'>Rok na cestě kolem světa</a>
-        <a ${active === 'alba.html' ? 'class=\'active\'' : ''}href='alba.html'>Alba a cestopisy</a>
-        <a ${active === 'blog.html' ? 'class=\'active\'' : ''}href='blog.html'>Blog</a>
-      </menu>
+      <div class='content'>
+      <ul class="menu">
+        <li ${active === 'index.html' ? 'class=\'active\'' : ''}><a href='index.html'>Domů</a></li>
+        <li ${active === 'rok-na-ceste-kolem-sveta.html' ? 'class=\'active\'' : ''}><a href='rok-na-ceste-kolem-sveta.html'>Rok na cestě kolem světa</a></li>
+        <li ${active === 'alba.html' ? 'class=\'active\'' : ''}><a href='alba.html'>Alba a cestopisy</a></li>
+        <li ${active === 'blog.html' ? 'class=\'active\'' : ''}><a href='blog.html'>Blog</a></li>
+      </ul>
     `
   return html
 }
@@ -49,11 +49,11 @@ exports.getHeadline = (headline, desc, date) => {
 
 exports.getHtmlItem = (src, album, desc) => {
   const html = `
-      <div class='flex album'>
-        <div class='left-box'>
+      <div class='flex'>
+        <div class='flex-2'>
           <p>${desc || ''}</p>
         </div>
-        <div class='right-box'>
+        <div class='flex-1'>
           <p>
             <img src='./facebook/${album}/${src}' width='400'>
           </p>
@@ -65,13 +65,13 @@ exports.getHtmlItem = (src, album, desc) => {
 
 exports.getHtmlItemAlbum = (url, headline, desc, album, mainPhoto, date) => {
   const html = `
-    <div class='album-item'>
-      <div class='album-item-photo'>
+    <div class='flex'>
+      <div class='flex-1'>
         <a href='./${url}'>
           <img src='./facebook/${album}/${mainPhoto}' width='300'>
         </a>
       </div>
-      <div class='album-item-desc'>
+      <div class='flex-2'>
         <h2>
           <a href='./${url}'>${headline}</a> <span class='date'>${date || ''}</span>
         </h2>
@@ -86,7 +86,7 @@ exports.getIndexContent = () => {
   const html = `
     <h1>O cestě kolem světa</h1>
     <div class='flex'>
-      <div class='left-box'>
+      <div class='flex-1'>
         <p>
           Ahoj! Jsem Jakub Mrozek a 9. 7. 2017 jsem vyrazil na <strong>cestu kolem světa</strong>.
           Jak vypadal můj první rok na cestě kolem světa můžete vidět <a href='rok-na-ceste-kolem-sveta.html'>zde</a>.
@@ -98,7 +98,7 @@ exports.getIndexContent = () => {
           Kontaktovat mě můžete na <a href='mailto:jakub.mrozek@gmail.com'>jakub.mrozek@gmail.com</a>.
         </p>
       </div>
-      <div class='right-box hp'>
+      <div class='flex-1'>
           <iframe width="400" height="255" src="https://www.youtube.com/embed/Jc6sHEnxMkI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
@@ -108,21 +108,18 @@ exports.getIndexContent = () => {
 
 exports.getHtmlItemPost = ({url, date, headline, image, perex}) => {
   const html = `
-    <div class='blog-item'>
-      <div class='blog-item-left'>
+    <div class='flex'>
+      <div class='flex-1'>
         <a href='${url}'>
-          <img class='blog-item-img' src='${image}' />
+          <img width='300' class='blog-item-img' src='${image}' />
         </a>
       </div>
-      <div class='blog-item-right'>
+      <div class='flex-'>
         <h2 class='blog-headline'>
           <a href='${url}'>${headline}</a>
-          <span class='blog-date'>${date}</span>
+          <span class='date'>${date}</span>
         </h2>
-        <div class='blog-perex'>${perex}</div>
-        <p class='blog-link-next'>
-          <a href='${url}'>Číst více</a>
-        </p>
+        <div class='blog-perex'>${perex} <a href='${url}'>Číst více</a></div>
       </div>
     </div>
     `
@@ -131,20 +128,20 @@ exports.getHtmlItemPost = ({url, date, headline, image, perex}) => {
 
 exports.getHtmlPost = ({url, date, headline, perex, image, content}) => {
   const html = `
-    <div class='blog-post'>
+    <div>
       <h2 class='blog-headline'>
         ${headline}
-        <span class='blog-date'>${date}</span>
+        <span class='date'>${date}</span>
       </h2>
-      <div class='blog-post-inside'>
-        <div class='blog-post-left'>
+      <div class='flex'>
+        <div class='flex-2'>
           <div class='blog-content'>
           ${perex}
           ${content}
           </div>
         </div>
-        <div class='blog-post-right'>
-          <img class='blog-post-img' src='${image}' />
+        <div class='flex-1'>
+          <img width='350' class='blog-post-img' src='${image}' />
         </div>
       </div>
     </div>
