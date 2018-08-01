@@ -106,10 +106,18 @@ manifest.albums.forEach(album => {
       image,
       headline,
       perex,
-      content: markdown.toHTML(text)
+      content: markdown.toHTML(text).replace(/~~~youtube: (.*)~~~/, (x, youtubeId) => {
+        return (
+          `<iframe width="400" height="255" src="https://www.youtube.com/embed/${youtubeId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`
+        )
+      })
     })
   }
-  contents.sort((a, b) => Number(a.id) > Number(b.id) ? 1 : -1)
+  contents.sort((a, b) => {
+    const aD = a.date.split(/\./g)
+    const bD = b.date.split(/\./g)
+    return new Date(`${aD[2]}-${aD[1]}-${aD[0]}`).getTime() > new Date(`${bD[2]}-${bD[1]}-${bD[0]}`).getTime() ? 1 : -1
+  })
   contents.reverse()
   const items = contents
   .map(item => {
