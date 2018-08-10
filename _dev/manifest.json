@@ -1,6 +1,17 @@
 {
   "albums": [
     {
+      "headline": "Jižní Korea - na skok (krok) do KLDR",
+      "folder": "demilitarizovana-zona",
+      "mainPhoto": "photo_2095219417154917.jpg",
+      "date": "léto 2018",
+      "sort": true,
+      "inAlbums": true,
+      "menu": "alba.html",
+      "url": "cestovani-na-skok-do-kldr.html",
+      "desc": "Včera jsem měl možnost navštívit demilitarizovanou zónu, nejstřeženější místo na světě, na chvíli překročit hranice do Severní Koreje a strávit celý den se severokorejským uprchlíkem."
+    },
+    {
       "headline": "Jižní Korea - Soul a okolí",
       "folder": "jizni-korea",
       "mainPhoto": "photo_2079583615385164.jpg",
