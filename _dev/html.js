@@ -100,6 +100,15 @@ exports.getIndexContent = () => {
           Ahoj! Jsem Jakub Mrozek a 9. 7. 2017 jsem vyrazil na <strong>cestu kolem světa</strong>.
           Jak vypadal můj první rok na cestě kolem světa můžete vidět <a href='rok-na-ceste-kolem-sveta.html'>zde</a>.
         </p>
+        <ul>
+          <li>Navštávil jsem 10 zemí a nezemí: Mongolsko, Čínu, Hong Kong, Vietnam, Laos, Thajsko, Malajsii, Filipíny, Japonsko a Jižní Koreu.</li>
+          <li>Několik dní jsem bydlel u nomádské rodiny někde uprostřed Mongolka. </li>
+          <li>V Číně jsem si koupil kolo a dojel s ním až do thajského Bangkoku přes Vietnam a Laos.</li>
+          <li>V Číně jsem si také našel přítelkyni, která za mnou každý měsíc na pár dní někam přiletí. Už byla takto v 9 zemích. Když nedostane víza, zaplatí si převaděče.</li>
+          <li>Severní Vietnam jsem projel celý na motorce. Japonsko shinkanseny.</li>
+          <li>V japonském Nagasaki jsem potkal člověka, který byl 1 km od místa, kde vybuchla atomová bomba.</li>
+          <li>V Koreji jsem strávil celý den uprchlíkem, který 3 roky utíkal z KLDR.</li>
+        </ul>
         <p>
           Sledovat mě můžete na <a href='https://www.facebook.com/DundeeVsSvet/'>Facebooku</a>.
         </p>
