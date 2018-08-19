@@ -110,7 +110,7 @@ exports.getIndexContent = () => {
           <li>V Koreji jsem strávil celý den uprchlíkem, který 3 roky utíkal z KLDR.</li>
         </ul>
         <p>
-          Sledovat mě můžete na <a href='https://www.facebook.com/DundeeVsSvet/'>Facebooku</a>.
+          Sledovat mě můžete na <a href='https://www.facebook.com/DundeeVsSvet/'>Facebooku</a> nebo <a href='https://www.instagram.com/cekoturisto/'>Instagramu</a>.
         </p>
         <p>
           Kontaktovat mě můžete na <a href='mailto:jakub.mrozek@gmail.com'>jakub.mrozek@gmail.com</a>.
