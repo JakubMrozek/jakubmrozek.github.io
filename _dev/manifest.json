@@ -1,6 +1,17 @@
 {
   "albums": [
     {
+      "headline": "Pěšky přes Tchaj-wan",
+      "folder": "taiwan",
+      "mainPhoto": "photo_2132273196782872.jpg",
+      "date": "léto 2018",
+      "sort": true,
+      "inAlbums": true,
+      "menu": "alba.html",
+      "url": "pesky-pres-tchaj-wan.html",
+      "desc": "První tři dny na Tchaj-wanu a už je to dost pestré na jedno fotoalbum! Něco málo o tom, jak vypadá ta druhá Čína."
+    },
+    {
       "headline": "Jižní Korea - na skok (krok) do KLDR",
       "folder": "demilitarizovana-zona",
       "mainPhoto": "photo_2095219417154917.jpg",
