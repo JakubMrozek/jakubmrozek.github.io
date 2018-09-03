@@ -62,6 +62,15 @@ img {
   margin-left: 5px;
   color: #b3b3b3;
 }
+.social-icon {
+  padding: 0;
+  position: relative;
+  top: 5px;
+}
+.hp-list {
+  list-style-type: none;
+  padding-left: 10px;
+}
 
 @media screen and (max-width: 800px){
   .flex {
