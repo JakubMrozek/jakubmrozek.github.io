@@ -98,7 +98,7 @@ manifest.albums.forEach(album => {
 
 // generate vybaveni
 {
-  const header = html.getHeader()
+  const header = html.getHeader('Vybavení na cestu kolem světa')
   const menu = html.getMenu('vybaveni.html')
   const content = html.getGearContent()
   const footer = html.getFooter()
