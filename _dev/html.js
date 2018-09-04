@@ -313,7 +313,7 @@ exports.getGearContent = () => {
       <li>Parfém</li>
       <li>Hřeben</li>
       <li>Kondomy</li>
-      <li>Sluneční krém</li>
+      <li>Opalovací krém</li>
       <li>Náplasti</li>
       <li>Vazelína</li>
       <li>Sanorin emulze</li>
