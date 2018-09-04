@@ -96,6 +96,16 @@ manifest.albums.forEach(album => {
   writeFile('index.html', page)
 }
 
+// generate vybaveni
+{
+  const header = html.getHeader()
+  const menu = html.getMenu('vybaveni.html')
+  const content = html.getGearContent()
+  const footer = html.getFooter()
+  const page = [header, menu, content, footer].join('')
+  writeFile('vybaveni.html', page)
+}
+
 // generate blog
 {
   const dir = fs.readdirSync(path.join(__dirname, '..', 'posts'))

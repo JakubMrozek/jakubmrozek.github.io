@@ -69,7 +69,18 @@ img {
 }
 .hp-list {
   list-style-type: none;
-  padding-left: 10px;
+  padding-left: 0;
+}
+.hp-list li {
+  padding-top: 10px;
+}
+hr {
+  border-top: 0;
+  border-bottom: 1px solid #0000002e;
+}
+.gear img {
+  border: 1px solid #0000002e;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 800px){
