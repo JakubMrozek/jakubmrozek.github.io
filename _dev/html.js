@@ -187,7 +187,6 @@ exports.getGearContent = () => {
       Jeho nevýhoda byla vyšší cena 4 490 Kč a váha 1,4 kg, naopak super je 16 kapes! 
       Objem má 40L, což znamená, že je zhruba z 80% zaplněn a zbytek prostoru se dá snadno využít pro jídlo. 
       Pořídil bych si ho nejspíš znova, ale předtím bych se podíval po lehčích variantách, existují už i batohy s váhou o kilo nižší.
-      Koupil jsem ho v obchodě <a target='_blank' href='http://shop.pod7kilo.cz/p/cestovatelsky-batoh-crumpler-track-jack-board-backpack-ruzne-barvy-1400-g/#4844'>Pod 7 kilo</a>, který se na kvalitní vybavení s nízkou váhou specializuje.
       </p>
 
       <h3>Malá taška/ruksak</h3>
