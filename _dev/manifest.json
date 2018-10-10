@@ -1,15 +1,26 @@
 {
   "albums": [
     {
-      "headline": "Pěšky přes Tchaj-wan",
+      "headline": "Hong Kong & Macau",
+      "folder": "hongkong",
+      "mainPhoto": "photo_2183542894989235.jpg",
+      "date": "léto 2018",
+      "sort": true,
+      "inAlbums": true,
+      "menu": "alba.html",
+      "url": "hong-kong-a-macau.html",
+      "desc": "Hong Kong a Macao jsou poslední dvě zastávky před tím, než si zase pořídím kolo. Zažil jsem tu všechno možné včetně napadení žralokem!"
+    },
+    {
+      "headline": "Tchaj-wan",
       "folder": "taiwan",
-      "mainPhoto": "photo_2132273196782872.jpg",
+      "mainPhoto": "photo_2153019208041604.jpg",
       "date": "léto 2018",
       "sort": true,
       "inAlbums": true,
       "menu": "alba.html",
       "url": "pesky-pres-tchaj-wan.html",
-      "desc": "První tři dny na Tchaj-wanu a už je to dost pestré na jedno fotoalbum! Něco málo o tom, jak vypadá ta druhá Čína."
+      "desc": "Několik momentek z té druhé Číny. 1. Kaohsiung 2. Kenting 3. Pěšky z Kentingu do Kaohsiungu. 4. Taipei 5. Jiufen 6. Hualien 7. Národní park Taroko 8. Taichung."
     },
     {
       "headline": "Jižní Korea - na skok (krok) do KLDR",
