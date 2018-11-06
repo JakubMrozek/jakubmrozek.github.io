@@ -101,6 +101,7 @@ exports.getIndexContent = () => {
           Ahoj! Jsem Jakub Mrozek a 9. 7. 2017 jsem vyrazil na <strong>cestu kolem světa</strong>.
           Jak vypadal můj první rok na cestě kolem světa můžete vidět <a href='rok-na-ceste-kolem-sveta.html'>zde</a>.
         </p>
+        <p>V listopadu 2018 jsem spustil nový web <a href="https://www.letimdojaponska.cz">Letím do Japonska</a> pro všechny, kteří plánují cestu do této země.</p>
         <ul class='hp-list'>
           <li>
           🌍 Během cesty jsem zatím navštívil 12 zemí a nezemí: Mongolsko, Čínu, Hong Kong, Vietnam, Laos, Thajsko, Malajsii, Filipíny, Japonsko, Jižní Koreu, Tchaj-wan a Macau.
