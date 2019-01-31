@@ -7,111 +7,6 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script>
-    const text = 
-      ` 
-      你好	nǐhǎo	Hello
-      爸爸	bàba	Father
-      儿子	érzi	Son
-      再见	zàijiàn	Goodbye
-      是	shì	To be
-      我	wǒ	I
-      你	nǐ	You
-      他,她	tā	He, she
-      妈妈	māma	Mother
-      女儿	nǚ'ér	Daughter
-      中国	zhōngguó	China
-      美国	měiguó	USA
-      人	rén	person，people
-      不	bù	not
-      们	men	plural
-      爱	ài	love
-      猫	māo	cat
-      狗	gǒu	dog
-      都	dōu	both or all
-      哥哥	gēge	older brother
-      姐姐	jiějie	older sister
-      有	yǒu	to have
-      弟弟	dìdi	younger brother
-      妹妹	mèimei	younger sister
-      没有	méiyǒu	not to have
-      的	de	of
-      熊猫	xióngmāo	panda
-      这	zhè	this
-      猪	zhū	pig
-      那	nà	that
-      也	yě	too
-      牛	niú	cow
-      羊	yáng	sheep
-      吗	ma	question y/n
-      鱼	yú	fish
-      鸡	jī	chicken
-      鸟	niǎo	bird
-      猪肉	zhūròu	pork (vepřové)
-      牛肉	niúròu	beef (hovězí)
-      吃	chī	to eat
-      面包	miànbāo	bread
-      蔬菜	shūcài	vegetables
-      和	hé	and
-      茶	chá	tea
-      咖啡	kāfēi	coffee
-      喝	hē	to drink
-      酒	jiǔ	alcohol
-      果汁	guǒzhì	juice
-      可乐	kělè	cola
-      喜欢	xǐhuān	to like
-      喜	xǐ	to like, be found of
-      欢	huān	happy, joyous
-      什么	shénme	what
-      叫	jiào	to be called
-    `
-    const words = text
-    .split('\n')
-    .map(w => w.trim())
-    .filter(w => w)
-    .map(w => {
-      const [chinese, pinyin, english] = w.split('\t')
-      return {chinese, pinyin, english}
-    })
-
-    const newWord = () => {
-      const word = words[Math.floor(Math.random() * words.length)]
-      $('.chinese').text(word.chinese)
-      $('.english').text(word.english)
-      $('.pinyin').text(word.pinyin)
-    }
-
-    const playWord = () => {
-      if ('speechSynthesis' in window) {
-        const msg = new SpeechSynthesisUtterance()
-        const voices = window.speechSynthesis.getVoices()
-        const chinese = voices.find(v => v.lang === 'zh-CN')
-        if (!chinese) {
-          // return window.alert('No Chinese')
-        }
-        const text = $('.chinese').text()
-        msg.voice = chinese
-        msg.text = text
-        msg.rate = 0.5
-        speechSynthesis.speak(msg)
-      } 
-    }
-
-    $(() => {
-      newWord()
-      $('.content').on('click', () => {
-        if ($('.english').is(':visible')) {
-          playWord()
-          $('.english').hide()
-          $('.chinese, .pinyin').show()
-        } else {
-          newWord()
-          $('.english').show()
-          $('.chinese, .pinyin').hide()
-        }
-      })
-    })
-  </script>
   <style>
     body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -122,8 +17,6 @@
       padding-top: 100px;
     }
     .content {
-      width: 200;
-      height: 200;
       align-items: center;
       justify-content: center;
     }
@@ -137,6 +30,16 @@
     .chinese, .pinyin {
       display: none;
     }
+    .continue {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+    .continue button {
+      font-size: 60%;
+      color: grey;
+    }
   </style>
 </head>
 <body>
@@ -145,5 +48,117 @@
     <p class='english'></p>
     <p class='pinyin'></p>
   </div>
+  <div class='continue'>
+    <button>Pokračovat</button>
+  </div>
+  <script>
+      const text = 
+        ` 
+        你好	nǐhǎo	Hello
+        爸爸	bàba	Father
+        儿子	érzi	Son
+        再见	zàijiàn	Goodbye
+        是	shì	To be
+        我	wǒ	I
+        你	nǐ	You
+        他,她	tā	He, she
+        妈妈	māma	Mother
+        女儿	nǚ'ér	Daughter
+        中国	zhōngguó	China
+        美国	měiguó	USA
+        人	rén	person，people
+        不	bù	not
+        们	men	plural
+        爱	ài	love
+        猫	māo	cat
+        狗	gǒu	dog
+        都	dōu	both or all
+        哥哥	gēge	older brother
+        姐姐	jiějie	older sister
+        有	yǒu	to have
+        弟弟	dìdi	younger brother
+        妹妹	mèimei	younger sister
+        没有	méiyǒu	not to have
+        的	de	of
+        熊猫	xióngmāo	panda
+        这	zhè	this
+        猪	zhū	pig
+        那	nà	that
+        也	yě	too
+        牛	niú	cow
+        羊	yáng	sheep
+        吗	ma	question y/n
+        鱼	yú	fish
+        鸡	jī	chicken
+        鸟	niǎo	bird
+        猪肉	zhūròu	pork (vepřové)
+        牛肉	niúròu	beef (hovězí)
+        吃	chī	to eat
+        面包	miànbāo	bread
+        蔬菜	shūcài	vegetables
+        和	hé	and
+        茶	chá	tea
+        咖啡	kāfēi	coffee
+        喝	hē	to drink
+        酒	jiǔ	alcohol
+        果汁	guǒzhì	juice
+        可乐	kělè	cola
+        喜欢	xǐhuān	to like
+        喜	xǐ	to like, be found of
+        欢	huān	happy, joyous
+        什么	shénme	what
+        叫	jiào	to be called
+      `
+      const words = text
+      .split('\n')
+      .map(w => w.trim())
+      .filter(w => w)
+      .map(w => {
+        const [chinese, pinyin, english] = w.split('\t')
+        return {chinese, pinyin, english}
+      })
+  
+      const newWord = () => {
+        const word = words[Math.floor(Math.random() * words.length)]
+        $('.chinese').text(word.chinese)
+        $('.english').text(word.english)
+        $('.pinyin').text('[' + word.pinyin + ']')
+      }
+  
+      const playWord = () => {
+        if ('speechSynthesis' in window) {
+          speechSynthesis.cancel()
+          const msg = new SpeechSynthesisUtterance()
+          const voices = window.speechSynthesis.getVoices()
+          const chinese = voices.find(v => v.lang === 'zh-CN')
+          if (!chinese) {
+            // return window.alert('No Chinese')
+          }
+          const text = $('.chinese').text()
+          msg.voice = chinese
+          msg.text = text
+          msg.rate = 0.5
+          speechSynthesis.speak(msg)
+        } 
+      }
+  
+      $(() => {
+        newWord()
+        speechSynthesis.getVoices()
+
+  
+        $('.continue').on('click', () => {
+          if ($('.english').is(':visible')) {
+            playWord()
+            $('.english').hide()
+            $('.chinese, .pinyin').show()
+          } else {
+            newWord()
+            $('.english').show()
+            $('.chinese, .pinyin').hide()
+          }
+        })
+      })
+    </script>
 </body>
 </html>
