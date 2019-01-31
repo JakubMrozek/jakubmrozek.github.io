@@ -119,7 +119,11 @@
       })
   
       const newWord = () => {
+        const lastWord = $('.chinese').text()
         const word = words[Math.floor(Math.random() * words.length)]
+        if (lastWord === word.chinese) {
+          return newWord()
+        }
         $('.chinese').text(word.chinese)
         $('.english').text(word.english)
         $('.pinyin').text('[' + word.pinyin + ']')
