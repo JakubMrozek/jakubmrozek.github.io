@@ -1,0 +1,32 @@
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  .content {
+    align-items: center;
+    justify-content: center;
+  }
+  .chinese, .english, .pinyin {
+    text-align: center;
+  }
+  .pinyin {
+    font-size: 80%;
+    color: grey;
+  }
+  .chinese, .pinyin {
+    display: none;
+  }
+  .continue {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  .continue button {
+    font-size: 70%;
+    color: grey;
+  }
