@@ -99,15 +99,16 @@
 
     $(() => {
       newWord()
-      $('.english').on('click', () => {
-        playWord()
-        $('.english').hide()
-        $('.chinese, .pinyin').show()
-      })
-      $('.chinese, .pinyin').on('click', () => {
-        newWord()
-        $('.english').show()
-        $('.chinese, .pinyin').hide()
+      $('body').on('click', () => {
+        if ($('.english').is(':visible')) {
+          playWord()
+          $('.english').hide()
+          $('.chinese, .pinyin').show()
+        } else {
+          newWord()
+          $('.english').show()
+          $('.chinese, .pinyin').hide()
+        }
       })
     })
   </script>
