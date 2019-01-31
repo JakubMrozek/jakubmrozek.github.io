@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="cs-CZ">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script>
+    $(() => {
+      if ('speechSynthesis' in window) {
+        speechSynthesis.onvoiceschanged = function() {}
+        $('.speak').click(() => {
+          const text = $('.message').text()
+          const msg = new SpeechSynthesisUtterance()
+          const voices = window.speechSynthesis.getVoices()
+          const chinese = voices.find(v => v.lang === 'zh-CN')
+          if (!chinese) {
+            return window.alert('No Chinese')
+          }
+          msg.voice = chinese
+          msg.text = text
+          msg.rate = 0.3
+          speechSynthesis.speak(msg)
+        })
+      } 
+    })
+  </script>
+  <style>
+    body {
+      font-size: 200%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content {
+      align-items: center;
+      justify-content: center;
+    }
+    .speak {
+      height: 30px;
+      width: 300px;
+    }
+    .message {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class='content'>
+    <p class='message'>你叫什么?</p>
+    <button class='speak'>Mluv</button>
+  </div>
+</body>
+</html>
