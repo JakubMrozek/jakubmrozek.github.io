@@ -33,6 +33,10 @@
   .settings ul {
     list-style-type: none;
   }
+  .settings li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .settings a {
     text-decoration: none;
   }
