@@ -30,3 +30,9 @@
     font-size: 70%;
     color: grey;
   }
+  .settings ul {
+    list-style-type: none;
+  }
+  .settings a {
+    text-decoration: none;
+  }

@@ -11,67 +11,21 @@
   <link href="./chinese-css.css" rel="stylesheet">
 </head>
 <body>
-  <div class='content'>
+  <div class='settings'>
+    <h2>Nastavení</h2>
+    <ul>
+      <li><a href='#' onclick="initWords('numbers'); return false">Čísla</a></li>
+      <li><a href='#' onclick="initWords('characters'); return false">Znaky</a></li>
+    </ul>
+  </div>
+  <div class='content' style='display:none'>
     <p class='chinese'></p>
     <p class='english'></p>
     <p class='pinyin'></p>
   </div>
-  <div class='continue'>
-    <button>Next</button>
+  <div class='continue' style='display:none'>
+    <button>Pokračovat</button>
   </div>
-  <script>
-      const words = text
-      .split('\n')
-      .map(w => w.trim())
-      .filter(w => w)
-      .map(w => {
-        const [chinese, pinyin, english] = w.split('\t')
-        return {chinese, pinyin, english}
-      })
-  
-      const newWord = () => {
-        const lastWord = $('.chinese').text()
-        const word = words[Math.floor(Math.random() * words.length)]
-        if (lastWord === word.chinese) {
-          return newWord()
-        }
-        $('.chinese').text(word.chinese)
-        $('.english').text(word.english)
-        $('.pinyin').text('[' + word.pinyin + ']')
-      }
-  
-      const playWord = () => {
-        if ('speechSynthesis' in window) {
-          speechSynthesis.cancel()
-          const msg = new SpeechSynthesisUtterance()
-          const voices = window.speechSynthesis.getVoices()
-          const chinese = voices.find(v => v.lang === 'zh-CN')
-          if (!chinese) {
-            // return window.alert('No Chinese')
-          }
-          const text = $('.chinese').text()
-          msg.voice = chinese
-          msg.text = text
-          msg.rate = 0.5
-          speechSynthesis.speak(msg)
-        } 
-      }
-  
-      $(() => {
-        newWord()
-        speechSynthesis.getVoices()
-        $('.continue').on('click', () => {
-          if ($('.english').is(':visible')) {
-            playWord()
-            $('.english').hide()
-            $('.chinese, .pinyin').show()
-          } else {
-            newWord()
-            $('.english').show()
-            $('.chinese, .pinyin').hide()
-          }
-        })
-      })
-    </script>
+  <script src="./chinese-js.js"></script>
 </body>
 </html>
