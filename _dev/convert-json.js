@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const folder = 'vychodni-timor'
+const folder = 'zima-v-japonsku'
 
 const folderPath = path.join(__dirname, '..', `/facebook/${folder}/`)
 const from = `${folderPath}/json.txt`

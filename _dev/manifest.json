@@ -13,6 +13,42 @@
       "desc": "Východní Timor byl 19. zemí ve východní a jihovýchodní Asie, která zůstala na seznamu zemí k návštěvě."
     },
     {
+      "headline": "Zima v Japonsku a další bizarnosti",
+      "folder": "zima-v-japonsku",
+      "mainPhoto": "2461779133832275.jpg",
+      "date": "jaro 2019",
+      "sort": true,
+      "inAlbums": true,
+      "prefix": false,
+      "menu": "alba.html",
+      "url": "zima-v-japonsku.html",
+      "desc": "Jak vypadá taková klasická zima v Japonsku?"
+    },
+    {
+      "headline": "Brunej",
+      "folder": "brunej",
+      "mainPhoto": "2445755532101302.jpg",
+      "date": "jaro 2019",
+      "sort": true,
+      "inAlbums": true,
+      "prefix": false,
+      "menu": "alba.html",
+      "url": "brunej.html",
+      "desc": "Pár momentek z nejméně navštěvované země jihovýchodní Asie. Jak vypadá život v jedné z nejbohatších zemí světa?"
+    },
+    {
+      "headline": "Na kole přes Asii - vietnamská část",
+      "folder": "na-kole-pres-asii-vietnam",
+      "mainPhoto": "2265306976812826.jpg",
+      "date": "podzim 2018",
+      "sort": true,
+      "inAlbums": true,
+      "prefix": false,
+      "menu": "alba.html",
+      "url": "na-kole-pres-asii-vietnam.html",
+      "desc": "Vydal jsem se na cestu přes Asii na kole s krátkou zastávkou v Japonsku a Severní Koreji. Takový je tedy plán. Zatím něco málo z Ho Chi Minhova města."
+    },
+    {
       "headline": "Hong Kong & Macau",
       "folder": "hongkong",
       "mainPhoto": "photo_2183542894989235.jpg",
