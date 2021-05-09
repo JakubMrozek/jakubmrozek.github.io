@@ -1,6 +1,18 @@
 {
   "albums": [
     {
+      "headline": "Východní Timor",
+      "folder": "vychodni-timor",
+      "mainPhoto": "3265719153438265.jpg",
+      "date": "jaro 2020",
+      "sort": true,
+      "inAlbums": true,
+      "prefix": false,
+      "menu": "alba.html",
+      "url": "vychodni-timor.html",
+      "desc": "Východní Timor byl 19. zemí ve východní a jihovýchodní Asie, která zůstala na seznamu zemí k návštěvě."
+    },
+    {
       "headline": "Hong Kong & Macau",
       "folder": "hongkong",
       "mainPhoto": "photo_2183542894989235.jpg",

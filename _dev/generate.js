@@ -60,7 +60,8 @@ manifest.albums.forEach(album => {
   photos.forEach(photo => {
     length += (photo.caption || '').length
   })
-  const items = photos.map(photo => html.getHtmlItem(`photo_${photo.IdPost}.jpg`, album.folder, photo.caption)).join('')
+  const prefix = album.prefix !== undefined && !album.prefix ? '' : 'photo_'
+  const items = photos.map(photo => html.getHtmlItem(`${prefix}${photo.IdPost}.jpg`, album.folder, photo.caption)).join('')
   const header = html.getHeader(album.headline)
   const menu = html.getMenu(album.menu)
   const headline = html.getHeadline(album.headline, album.desc, album.date)
